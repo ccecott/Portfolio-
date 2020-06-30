@@ -1,13 +1,16 @@
 .nav {
     height: 10vh;
-    background:linear-gradient(rgba(245, 221, 184, 0.97),rgba(232, 205, 165, 0.97)) ; 
-    border-bottom: 1.5px ridge rgb(63, 63, 63);
+    background-color:rgba(232, 205, 165, 0.97) ; 
     position: fixed;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'PT Mono', monospace;
+    z-index: 18;
+    -webkit-box-shadow: 0 0 3px 0 black;
+    -moz-box-shadow: 0 0 3px 0 black;
+    box-shadow: 0 0 3px 0 black;
 }
 
 .move {
@@ -21,19 +24,71 @@
     padding-left: 20px;
     color: black;
 }
-
-.nav_links {
-    display: flex;
-    padding-right: 50px;
-    
+.hidden {
+    display: none;
 }
 
+ul {
+    height: 100vh;
+    display: flex;
+    padding: 10px;
+    top: 8vh;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    position: fixed;
+    background:rgba(232, 205, 165, 0.97) ; 
+    right: 0px;
+    /* border-radius: 2px; */
+    list-style: none;
+    z-index: 0;
+    -webkit-box-shadow: 0 3px 3px 0 black;
+    -moz-box-shadow: 0 3px 3px 0 black;
+    box-shadow: 0 3px 3px 0 black;
+}
+li{
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav_links {
+    display: flex; 
+    text-decoration: none;
+}
 
 
 .link {
-    font-size: .7em;
+    font-size: .9rem;
     text-decoration: none;
-    padding-left: 10px;
+    padding: 10px;
     color: black;
-    
 }
+
+.fa-ellipsis-v {
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .fa-ellipsis-v {
+        display: none;
+    }
+    .ul {
+        position: static;
+      display: flex;
+      flex-direction: row;
+      height: auto; 
+      box-shadow: none;
+      background-color: transparent;
+    }
+    li {
+        border-bottom: none;
+    }
+    .link {
+        font-size: 1rem;
+    }
+    .fa-desktop {
+        font-size: 1.5rem;
+    }
+}
+

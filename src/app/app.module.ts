@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ResumeComponent } from './resume/resume.component';
 // import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
@@ -22,13 +23,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavComponent,
     ContactMeComponent,
     ProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ResumeComponent
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+
 
   ],
   providers: [],

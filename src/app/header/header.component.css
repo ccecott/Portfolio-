@@ -1,24 +1,25 @@
 .header {
     display: flex;
     flex-direction: column;
-   padding-top: 130px;
-    padding-bottom: 100px;
+    padding: 130px 40px 100px 40px;
     font-family: 'PT Mono', monospace;
+    
 }
 
 .content {
     margin: 0 20px 0 20px;
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
+  
 }
 
 .title {
     
-    padding: 20px 20px;
+    padding: 20px;
     font-size: 1.5em;
     margin-bottom: 10px;
     color: rgb(39, 39, 39);
-    font-size: 1.3em;
+    
     font-weight: lighter;
     align-self: flex-end;
 }
@@ -35,15 +36,24 @@
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background: #4e718a;
     box-shadow: 0px 0px 0px transparent;
     text-shadow: 0px 0px 0px transparent;
     border-radius: 7px;
     font-family: 'PT Mono', monospace;
-    color: #FCF4E7;
     align-self: center;
     margin-top: 20px;
+	border: none;
+    font: inherit;
+    outline: inherit;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #FCF4E7;
+    font-size: .9rem;
+
 }
 
 
@@ -53,9 +63,41 @@
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
-    width: 25vh;
-    height: 25vh;
+    width: 140px;
+    height: 140px;
     margin: 10vh 0 0 2vw;
     position: static;
+    /* background-attachment: fixed; */
+    
 }  
 
+@media screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 130px 60px 100px 60px;
+    }
+    .content {
+        flex: 2;
+        margin-left: 40px;
+    }
+    .pic {
+        max-width: 400px;
+        height: 400px;
+        min-width: 400px;
+        flex: 1;
+        background-attachment: scroll;
+        position: static;
+        margin-right: 40px;
+        
+    }
+
+    .title {
+        padding: 40px;
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+}

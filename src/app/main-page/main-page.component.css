@@ -19,10 +19,10 @@
 .projects {
    display: flex;
    justify-content: space-around;
-   justify-items: center;
+  justify-items: center;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding-left: 220px;
+  padding-left: 30px;
    /* align-items: center; */
    
 }
@@ -45,7 +45,7 @@
 .one {
     background-color: rgb(44,44,44);
     font-family: "Baloo Thambi 2", cursive;
-    color: rgb(253, 143, 0);
+    color: rgb(143, 171, 62);
     
 }
 
@@ -63,3 +63,31 @@
     color: black;
 }
 
+/* media quesries for extremely small screens
+need to fix:
+-nav sidebar
+-header(nav) and footer widths
+-font size  */
+/* @media screen and (min-width:625px) {
+    .projects {
+        justify-items: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-left: 200px;
+    }
+
+} */
+
+/* media query going to desktop
+need to fix:
+-getting rid of nav sidebar
+-font sizes 
+-project layouts  */
+@media screen and (min-width: 768px) {
+
+    .projects {
+        padding-left: 0;
+        /* flex-wrap: wrap; */
+    }
+
+}

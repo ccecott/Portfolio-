@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @Component({
   selector: 'app-resume',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ResumeComponent implements OnInit {
 
   constructor() { }
+  // pdfSrc = "/Users/ccecott/Desktop/portfolio/src/assets/Cecott_ Resume_MI (1).pdf";
 
   ngOnInit(): void {
   }

@@ -1,15 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-body, h1, p {
+body, h1, p, div {
     margin: 0;
     padding: 0;
-    
-    font-size: 25px;
+    position: relative;
+    font-size: 17px;
     
 }
 
 body {
     background-image: url(./app/main-page/photos/isaac-benhesed-onLbXleIkds-unsplash.jpg);
+    background-attachment: fixed;
     background-position: center;
-    background-size: fill;
+    background-size: auto auto;
     background-repeat: no-repeat;
+    /* height: fit-content; */
+    /* position: fixed; */
 }
+
+

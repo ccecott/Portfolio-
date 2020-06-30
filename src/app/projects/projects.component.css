@@ -1,0 +1,46 @@
+.projects-container {
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+  justify-items: center;
+  /* padding-top: 200px; */
+  flex-wrap: wrap;
+  height: 100vh;
+  
+}
+
+.project_link {
+    width: 250px;
+    height: 220px;
+    background-color: rgba(114, 112, 110, 0.4);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.anchor {
+    text-decoration: none;
+}
+
+.one {
+    background-color: rgb(44,44,44);
+    font-family: "Baloo Thambi 2", cursive;
+    color: rgb(143, 171, 62);
+    
+}
+
+.two {
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-weight: 300;
+
+}
+
+.three {
+    background-color: rgb(171, 192, 174);
+    font-family: 'Playfair Display', serif;
+    color: black;
+}

@@ -3,12 +3,21 @@
         <a href="#" routerLink="/main-page"><i class="fas fa-desktop"></i></a>
     </div>
     <div class="bull">
+
         <nav class="nav_links">
-            <!-- <a href="#" class="link">About |</a> -->
-            <a href="#" routerLink="/projects" class="link"> Projects |</a>
-            <!-- navigate to contact me page here with list of conact info  -->
-            <a href="#" routerLink="/contact-me" class="link">Contact Me |</a>
-            <a href="#" routerLink="/about-me" class="link">About Me</a>
+            <i class="fas fa-ellipsis-v" (click)="toggleClass()"></i>
+            <ul [ngClass]="{hidden : hidden}" class="ul">
+                <li>
+                    <a href="#" routerLink="/projects" class="link"> Projects</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/contact-me" class="link">Contact Me</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/about-me" class="link">About Me</a>
+                </li>
+            </ul>
+
         </nav>
     </div>
 </div>
