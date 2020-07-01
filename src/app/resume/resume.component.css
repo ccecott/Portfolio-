@@ -4,14 +4,14 @@
     flex-direction: column;
     justify-self: center;
     align-self: center;
-    padding: 50px;
+    padding: 20px;
     
     /* margin-right: 60px; */
-    margin: 100px;
+    margin: 70px 10px 10px 10px;
     position: static;
     border: 1px solid black;
     /* width: 200px; */
-    height: 330vh;
+    /* height: 100%; */
     background-color: white;
 }
 
@@ -34,8 +34,3 @@ li {
     font-size: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-    .resume {
-        height: 240vh;
-    }
-}
